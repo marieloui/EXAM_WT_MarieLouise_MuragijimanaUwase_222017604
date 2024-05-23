@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online therapy PLATFORM</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="
+sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css
+" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="
+sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+    <label class="logo" >ONT <br>
+        (ONLINE THERAPY PLATFORM)</label>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        
+        
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Services  <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="clients.php">Patient Records</a></li>
+                    <li><a href="therapist.php">Doctor Records</a></li>
+                    <li><a href="messages.php"> RESULT FROM SESSION </a></li>
+                    <li><a href="payments.php"> PAYMENT Records</a></li>
+                    <li><a href="appointments.php">Appointment Records</a></li>
+                    <li><a href="review.php"> RATE THE SESSION  </a></li>
+                    <li><a href="sessions.php">  HEALING TIME   </a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Settings <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+</nav>
+<div class="container">
+    <h2>Doctor Form</h2>
+    <form action="clients.php" method="POST" onsubmit="return confirmInsert();">
+
+      <div class="form-group">
+        <label for="client_id">client_id ID:</label>
+        <input type="text" id="client_id" name="client_id" required>
+      </div>
+      <div class="form-group">
+        <label for="full_name">FUll Name:</label>
+        <input type="text" id="full_name" name="full_name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="telephone">Phone Number:</label>
+        <input type="text" id="telephone" name="telephone" required>
+      </div>
+      
+     
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+</section><br><br><br>
+<footer>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        
+    </ul>
+    <p>&copy;2024 My Website. All rights reserved.</p>
+  </footer>
+  <script>
+  function confirmInsert() {
+  return confirm('Are you sure you want to insert this record?');
+  }
+  </script>
+  
+    
+</body>
+</html>
